@@ -1,0 +1,37 @@
+* {
+  box-sizing: border-box;
+}
+/*Artribute selector*/
+[class*="col-"] {
+  padding: 15px;
+  float: left;
+}
+body {
+  background-image: url(image_zu/Groove_.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: "Schibsted Grotesk", sans-serif;
+}
+.center {
+  text-align: center;
+}
+
+.objective {
+  margin-left: 140px;
+  margin-right: 140px;
+}
+.flex-container {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  margin: auto;
+  flex-wrap: wrap;
+}
+.item {
+  flex-basis: 28%;
+  border: 7px groove darkslateblue;
+  margin: 0 15px;
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 10px;
+}

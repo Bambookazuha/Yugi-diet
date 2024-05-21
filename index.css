@@ -1,0 +1,70 @@
+body, html {
+    font-family: "Schibsted Grotesk", sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+
+@media screen and (max-width: 768px) {
+   
+    .row {
+    margin-top: 5%;
+    }
+
+    .container {
+        background: url(image_zu/wallpaper.png);
+        margin-top: 24px;
+        height: 100%;
+        position: relative;
+      }
+      .text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+      }
+      .text > h1 {
+        font-size: 50px;
+      }
+      .text > p {
+        font: 22px;
+      }
+      .text > button { 
+        height: 50px;
+        width: 150px;
+        font-size: 20px;
+        background-color: #bf875d;
+        color: #fff;
+        padding: 10px 15px;
+        border-radius: 7px;
+        box-shadow: 0 1px 1px 0 rgb(117, 115, 115);
+        transition: background-color 0.3s ease;
+      }
+      .premium {
+        color: white;
+        text-decoration: none;
+   
+    .button-section {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    .get-premium {
+        display: inline-block;
+        background-color: #bf875d;
+        color: #fff;
+        text-decoration: none;
+        padding: 10px 15px;
+        border-radius: 4px;
+        font-size: 18px;
+        transition: background-color 0.3s ease;
+    }
+    
+}
+}
+

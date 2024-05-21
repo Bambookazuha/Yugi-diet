@@ -1,0 +1,174 @@
+body {
+    font-family: "Schibsted Grotesk", sans-serif;
+}
+nav {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+}
+
+nav .logo {
+    text-decoration: none;
+    color: rgba(251, 223, 229, 0.583);
+    font-size: 28px;
+    height: 40px;
+    line-height: 60px;
+    margin-left: 20px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    display: block;
+    color: #000000;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 20px;
+    margin: 0 8px;
+}
+.checkbtn {
+    float: right;
+    color: white;
+    font-size: 40px;
+    margin-right: 30px;
+    line-height: 60px;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+/*dropdown start*/
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 15px;
+    background-color: #fff;
+    min-width: 170px;
+    display: none;
+   
+    z-index: 100;
+    box-shadow: 5 5px 5px rgba(0, 0, 0, 0.1);
+    transition: 0.3s ease-in;
+}
+
+.dropdown-menu a {
+    color: #333;
+    font-size: 16px;
+    padding: 12px 30px;
+    display: block;
+    margin: 0;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu a:hover {
+    background-color: #548f5d;
+}
+
+.bi-caret-down-fill {
+    font-size: 12px;
+}
+
+.logo {
+    display: inline-block;
+    margin-left: 20px; 
+    margin-bottom: 150px;
+}
+
+.logo-image {
+    width: 185px; 
+    height: auto; 
+
+}
+@media screen and (max-width: 768px) {
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 60px;
+        padding: 0 10px;
+    }
+
+    .logo {
+        display: inline-block;
+        height: 100%; 
+        line-height: 60px; 
+        margin-left: 10px;
+    }
+
+    .logo-image {
+        max-height: 185px; 
+        width: auto; 
+    }
+
+    nav ul {
+        background-color:#dfe6b1;
+        width: 100%;
+        height: auto;
+        position: fixed;
+        top: 60px;
+        left: -100%;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        padding-top: 30px;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    nav ul li a:hover {
+        margin: 0;
+    }
+
+    .dropdown-menu {
+        left: 50%;
+        background-color: #e7ffcb;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .dropdown-menu a {
+        padding: 12px 16px;
+        color: #000000;
+    }
+
+    #check:checked ~ ul {
+        left: 0;
+    }
+
+    .checkbtn {
+        display: block;
+        position: absolute;
+        top: 5%;
+        right: 10px;
+        font-size: 40px;
+        color: white;
+    }
+}

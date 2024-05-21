@@ -1,0 +1,27 @@
+body {
+  font-family: "Schibsted Grotesk", sans-serif;
+}
+.flex-container {
+  display: flex;
+  width: 80%;
+  height: 400px;
+  margin: auto;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+body {
+  background-color: white;
+}
+.item {
+  padding: 0;
+  flex-basis: 28%;
+  margin: 0 20px;
+  text-align: center;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  border: 0;
+  background-color: rgb(255, 255, 186);
+}
+.picture {
+  border-radius: 10px;
+}

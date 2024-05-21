@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yugi|Payment form</title>
+    <link rel="icon" type="image/x-icon" href="image_zu/logo.png" />
+    <!--External css link-->
+    <link rel="stylesheet" href="payment.css" />
+    <link rel="stylesheet" href="column.css">
+    <link rel="stylesheet" href="nav.css"/>
+    <link rel="stylesheet" href="footer.css">
+     <!--Bosststrap Icon CDN link-->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  </head>
+  <body>
+       <!--Nav start-->
+       <nav style="background-color: #cad19f;">
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn"><i class="bi bi-list"></i></label>
+        <a href="#" class="logo"><img src="image_zu/logo.png" alt="logo" class="logo-image"></a>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li class="dropdown"><a href="#">Mediterranean Diet<i class="bi bi-caret-down-fill"></i></a>
+                <div class="dropdown-menu">
+                    <a href="Yoga 1.html">Yoga</a>
+                    <a href="meditation 1.html">Meditation</a>
+                    <a href="timetable.html">Timetable</a>
+                    <a href="recipes.html">Recipes</a>
+                </div>
+            </li>
+            <li class="right"><a href="about-us 1.html">About Us</a></li>
+            <li class="right"><a href="contact_us.html">Contact Us</a></li>
+            <li class="right"><a href="get_premium 1.html">Get Premium</a></li>
+        </ul>
+    </nav>
+    <!--Nav end--><br><br>
+    <br /><br />
+    <h1 style="text-align: center">Payment</h1>
+    <br /><br />
+    <!--First page start-->
+
+    <!--First content box start-->
+    <div class="Container">
+      <div class="row">
+        <div class="col-10">
+          <div class="col-5 col-s-3 first-box">
+            <p class="center">Total to pay</p>
+            <h1 class="center">$60 USD</h1>
+            <div class="contentbox1">
+              <p>How would you like to pay?</p>
+              <!--Radio buttons-->
+              <label>Choose a payment method</label><br /><br />
+              <input type="radio" name="payment" id="visa" />
+              <label for="visa"
+                ><img src="image_zu/Visa.png" alt="payment"
+              /></label>
+
+              <input type="radio" name="payment" id="paypal" />
+              <label for="paypal"
+                ><img src="image_zu/paypal.webp" alt="card"
+              /></label>
+
+              <input type="radio" name="payment" id="applepay" />
+              <label for="applepay"
+                ><img src="image_zu/applepay 2.png" alt="apple"
+              /></label>
+
+              <input type="radio" name="payment" id="googlepay" />
+              <label for="googlepay"
+                ><img src="image_zu/google 2.png" alt="pay" /></label
+              ><br /><br />
+              <a href="get_premium 1.html"
+                ><button type="submit" id="first-button">
+                  ← Back to order reviews
+                </button></a
+              >
+            </div>
+          </div>
+
+          <div class="col-7 col-s-9 second-box">
+            <br />
+            <h1 class="center">Your payment form details</h1>
+            <br />
+            <!--name&email-->
+            <label for="Fname" class="left">Name on card</label><br /><br />
+            <input
+              type="text"
+              name="Fname"
+              id="Fname"
+              placeholder="  Full-name"
+              class="left"
+            />
+            <br /><br /><br />
+
+            <label for="number" class="left">Credit Card number</label
+            ><br /><br />
+            <input
+              type="text"
+              name="number"
+              id="number"
+              placeholder="  456-xxx-xxx"
+              class="left"
+            /><br /><br /><br />
+
+            <label for="Password" class="left">Password</label><br /><br />
+            <input
+              type="text"
+              name="Password"
+              id="Password"
+              placeholder="  passcode"
+              class="left"
+            /><br /><br /><br />
+
+            <!--Expirary date-->
+            <label for="no" class="left">Expirary date</label><br /><br />
+            <select id="no" name="no" size="1" class="left">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+              <option value="12">12</option>
+            </select>
+
+            <input
+              type="text"
+              name="year"
+              id="year"
+              placeholder="  year"
+            /><br /><br /><br />
+
+            <button
+              type="button"
+              class="left"
+              id="click"
+              onclick="location.reload()"
+            >
+              Cancel
+            </button>
+            <button type="button" id="click">Pay now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+          <!--Footer-->
+          <footer>
+            <div class="row" style="display:flex;align-items: start;">
+                <div class="col-s-4 footer-brand" >
+                    <a href="#" class="logo2"><img src="image_zu/logo2.png" alt="logo"></a>
+                    <p>Email:yugi4915@gmail.com</p>
+                    <p>Number No: +9543107552, +95428621502</p>
+                </div>
+                <div class="col-s-4 footer_link">
+                    <h3 class="heading">Quick Links</h3>
+                    <a href="index.html">Home</a>
+                    <a href="Yoga 1.html">Yoga</a>
+                    <a href="meditation 1.html">Meditation</a>
+                    <a href="timetable.html">Timetable</a>
+                    <a href="recipes.html">Recipes</a>
+                    <a href="about-us 1.html">About Us</a>
+                    <a href="contact_us.html">Contact us</a>
+                    <a href="https://edusn-my.sharepoint.com/:w:/r/personal/nyeinmyatthazin_edusnschool_co_uk/_layouts/15/doc2.aspx?sourcedoc=%7Bcba528d4-26b7-4e2e-8875-e89c093a85cc%7D&action=edit">Reference</a>
+                </div>
+                <div class="col-s-4 subscribe">
+                    <h3 class="heading">Subscribe our website.</h3>
+                    <div>
+                        <input type="email" name="email" placeholder="Enter Email"  style="height:30px;width:70%;">
+                        <button type="submit" style=" padding:7px 5px;background-color:rgb(76, 221, 144);">Submit</button><br><br>
+                    </div>
+                    <h3 class="heading">Social Links</h3>
+                    <ul>
+                        <li><a href="https://www.facebook.com/profile.php?id=61558699965864&mibextid=ZbWKwL" class="bi bi-facebook"></a></li>
+                        <li><a href="https://www.youtube.com/@Guardiansofgreen" class="bi bi-youtube"></a></li>
+                        <li><a href="https://twitter.com/yugi4915" class="bi bi-twitter"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">©Copyright 2023-2026 | Yugi </p>    
+        </footer>
+  </body>
+</html>
